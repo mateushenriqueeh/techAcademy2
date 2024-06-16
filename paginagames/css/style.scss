@@ -1,0 +1,33 @@
+$font1:  'Titillium Web', sans-serif;
+$primary: #1e1e1e;
+$secondary: #040314;
+$color: #fff;
+$selection:#00ff21;
+
+.navbar {
+    background-color: $primary;
+    .nav-link{
+        font: 22px $font1;
+        color: $color;
+    }
+    .navbar-nav .nav-link.show{
+        color: $selection ;
+    }
+    .dropdown-menu{
+        background-color: $primary;
+        border-radius: 0;
+        border-top: 5px solid $selection;
+        .dropdown-item{
+            font: 20px $font1;
+            text-transform: uppercase;
+            color: $selection;
+        }
+    }
+    .d-flex .btn {
+        font-size: 10px $font1;
+        border-radius: 0;
+        
+
+    }
+}
+

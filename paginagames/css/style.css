@@ -1,0 +1,20 @@
+.navbar {
+  background-color: #1e1e1e; }
+  .navbar .nav-link {
+    font: 22px "Titillium Web", sans-serif;
+    color: #fff; }
+  .navbar .navbar-nav .nav-link.show {
+    color: #00ff21; }
+  .navbar .dropdown-menu {
+    background-color: #1e1e1e;
+    border-radius: 0;
+    border-top: 5px solid #00ff21; }
+    .navbar .dropdown-menu .dropdown-item {
+      font: 20px "Titillium Web", sans-serif;
+      text-transform: uppercase;
+      color: #00ff21; }
+  .navbar .d-flex .btn {
+    font-size: 10px "Titillium Web", sans-serif;
+    border-radius: 0; }
+
+/*# sourceMappingURL=style.css.map */
