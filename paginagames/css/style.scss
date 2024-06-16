@@ -3,15 +3,20 @@ $primary: #1e1e1e;
 $secondary: #040314;
 $color: #fff;
 $selection:#00ff21;
+$font2:'Roboto', sans-serif;
 
 .navbar {
     background-color: $primary;
+
     .nav-link{
-        font: 22px $font1;
+        font: 20px $font1;
         color: $color;
+        margin-left: 150px;
+        
     }
     .navbar-nav .nav-link.show{
         color: $selection ;
+
     }
     .dropdown-menu{
         background-color: $primary;
@@ -26,8 +31,222 @@ $selection:#00ff21;
     .d-flex .btn {
         font-size: 10px $font1;
         border-radius: 0;
-        
 
+    }
+
+    
+}
+
+body{
+    background-color: $secondary;
+    font-family: $font1;
+}
+
+.container1{
+    max-width: 1080px;
+    margin: 0 auto;
+    color: $color;
+}
+
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 34%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #00ff00;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #00ff22;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #00ff00;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+
+ 
+
+
+}
+
+//Configurando CSS da parte contato
+
+
+.contact-container {
+    background-color: $primary; /* Fundo do container mais claro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 600px;
+    justify-content: center;
+    h1{
+        color: $color;
     }
 }
 
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color:$color; /* Cor dos labels */
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #404040;
+    color: #fff;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    background-color: #505050;
+    box-shadow: 0 0 10px rgba(21, 255, 0, 0.5); /* Brilho no foco */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: $selection; /* Botão vibrante */
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: $selection; /* Efeito no hover */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .navbar .nav-link{
+        margin-left:10px
+        }
+    
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+.container{
+    display: flex;
+    width:100%;
+    margin-top: 5%;
+    height: 100vh;
+    padding: 0px 2%;
+}
+
+.caixa{
+    width: 42%;
+    max-height: 60%;
+    color: $color;
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        line-height: 4rem;
+        color: #00ff00;
+    }
+    h4{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        animation: blink 3s infinite;
+        background-color: $selection;
+        align-items: center;
+        width: 20%;
+    }
+    p{
+        font-family: $font2;
+        margin-bottom: 4rem;
+        text-align: justify;
+    }
+    img{
+        width: 120%;
+    }
+    
+}
