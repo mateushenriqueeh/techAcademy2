@@ -32,9 +32,25 @@ $font2:'Roboto', sans-serif;
         font-size: 10px $font1;
         border-radius: 0;
 
+    }   
+}
+.container{
+    color: $color;
+    h1{
+        color: $selection;
+        justify-content: center;
+        font-family: $font2;
     }
-
+    p{
+        justify-content: center;
+        font-family: $font2;
+    }
     
+}
+
+.container img{
+    width: 100%;
+
 }
 
 body{
@@ -119,6 +135,16 @@ section.slider{
     margin-left: -50%;
 }
 
+.container2 {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    height: 100vh;
+    padding: 0px 2%;
+}
+
+
+
 @media screen and (max-width: 900px) {
     .img-desktop{
         display: none;
@@ -131,12 +157,7 @@ section.slider{
     .nav-auto, .nav-manual{
         margin-top: 60%;
     }
-
- 
-
-
 }
-
 //Configurando CSS da parte contato
 
 
@@ -152,6 +173,8 @@ section.slider{
         color: $color;
     }
 }
+
+
 
 .form-group {
     margin-bottom: 20px;
@@ -212,41 +235,7 @@ button:hover {
         font-size: 16px;
         padding: 12px;
     }
+
 }
 
-.container{
-    display: flex;
-    width:100%;
-    margin-top: 5%;
-    height: 100vh;
-    padding: 0px 2%;
-}
 
-.caixa{
-    width: 42%;
-    max-height: 60%;
-    color: $color;
-    h1{
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        line-height: 4rem;
-        color: #00ff00;
-    }
-    h4{
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        animation: blink 3s infinite;
-        background-color: $selection;
-        align-items: center;
-        width: 20%;
-    }
-    p{
-        font-family: $font2;
-        margin-bottom: 4rem;
-        text-align: justify;
-    }
-    img{
-        width: 120%;
-    }
-    
-}

@@ -1,52 +1,45 @@
 <?php
-    $url="infogames.json";
-
-    $dadosApi = file_get_contents($url);
-    $dadosBanner = json_decode($dadosApi);
-
-
+    $dados = $dadosJogos->$codigo; 
 ?>
-
-
+<br>
 <div class="container">
-    <div class="caixa">
+    <h1 class="text-center"><?=$dados->nome?></h1>
+    <div class="row">
 
-    <?php 
-
-    foreach($dadosBanner as $dados){
-          ?>
-          <h1>
-               <?= $dados ->nome?>
-          </h1>
-
+        <div class="col-12 col-md-13">
+            <p>
+                <?=$dados->descricao?>
+            </p>
+        </div>
+    </div>
+    <br>
+    <img src="<?=$dados->imagem?>" alt="">
+    <br>
+    <br>
+    <h2 class="text-center">FOTOS DO JOGO</h2>
+    <br>
+    <div class="row">
         <?php
-    }
-    ?>
+            $dadosFotos = file_get_contents("fotos.json");
+            $dadosFotos = json_decode($dadosFotos);
+            //só as fotos do jogo
+            $dados = $dadosFotos->$codigo;
 
-<?php 
-
-foreach($dadosBanner as $dados){
-      ?>
-      <p>
-           <?= $dados ->descricao?>
-    </p>
-
-    <?php
-}
-?>
+            $i = 1;
+            foreach($dados as $foto) {
+                ?>
+                <div class="col-12 col-md-3">
+                    <a href="<?=$foto->foto?>" title="Foto <?=$i?>"
+                    data-fslightbox>
+                        <img src="<?=$foto->foto?>"
+                        alt="Foto <?=$i?>" class="w-100">
+                    </a>
+                </div>
+                <?php
+                $i++;
+            }
+        ?>
     </div>
-
-    <div class="caixa">
-    <?php 
-
-foreach($dadosBanner as $dados){
-      ?>
-
-      <img src="<?=$dados ->imagem?>" alt="">
-
-
-    <?php
-}
-?>
-    </div>
+    <br>
 </div>
+

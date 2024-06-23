@@ -19,6 +19,19 @@
     font-size: 10px "Titillium Web", sans-serif;
     border-radius: 0; }
 
+.container {
+  color: #fff; }
+  .container h1 {
+    color: #00ff21;
+    justify-content: center;
+    font-family: "Roboto", sans-serif; }
+  .container p {
+    justify-content: center;
+    font-family: "Roboto", sans-serif; }
+
+.container img {
+  width: 100%; }
+
 body {
   background-color: #040314;
   font-family: "Titillium Web", sans-serif; }
@@ -84,6 +97,13 @@ section.slider {
 
 #radio3:checked ~ .primeiro {
   margin-left: -50%; }
+
+.container2 {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+  height: 100vh;
+  padding: 0px 2%; }
 
 @media screen and (max-width: 900px) {
   .img-desktop {
@@ -159,34 +179,5 @@ button:hover {
   button {
     font-size: 16px;
     padding: 12px; } }
-.container {
-  display: flex;
-  width: 100%;
-  margin-top: 5%;
-  height: 100vh;
-  padding: 0px 2%; }
-
-.caixa {
-  width: 42%;
-  max-height: 60%;
-  color: #fff; }
-  .caixa h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    line-height: 4rem;
-    color: #00ff00; }
-  .caixa h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    animation: blink 3s infinite;
-    background-color: #00ff21;
-    align-items: center;
-    width: 20%; }
-  .caixa p {
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 4rem;
-    text-align: justify; }
-  .caixa img {
-    width: 120%; }
 
 /*# sourceMappingURL=style.css.map */

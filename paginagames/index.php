@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="csss/style.css">
 
 
 </head>
@@ -84,12 +84,7 @@
 
 
                             ?>
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+
                         </ul>
                     </li>
 
@@ -114,7 +109,7 @@
             $pagina = $_GET["pagina"] ?? "home";
             $pagina = explode("/", $pagina);
 
-            print_r($pagina);
+            //print_r($pagina);
 
             $codigo = $pagina[1] ?? Null;
             $pagina = $pagina[0] ?? "home";
