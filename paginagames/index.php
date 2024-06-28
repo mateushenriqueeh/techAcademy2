@@ -8,10 +8,11 @@
     <meta name="description" content="Página de games, com jogos gratuitos">
     <meta name="keyworlds" content="games, jogos, lançamentos">
     <script src="slide.js" defer></script>
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
     
 
-    <!-- mudar para link do meu site quando colocar no ar -->
-    <base href="http://localhost/paginagames/">
+    <!-- mudar para link do meu site quando colocar no ar https://techjogos.000webhostapp.com/ -->
+    <base href="https://techjogos.000webhostapp.com/">
 
 
     <!--Fontes -->
@@ -25,10 +26,10 @@
 
     <!--Links CSS -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="csss/style.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/aos.css">
+    <link rel="stylesheet" href="style/style.css">
 
 
 </head>
@@ -62,17 +63,17 @@
                         <a class="nav-link" aria-current="page" href="home">
                             <i class="fa-solid fa-house"></i>
                             
-                        Home</a>
+                        HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="quem-somos">
                         <i class="fa-solid fa-info"></i>
-                            Quem Somos</a>
+                            QUEM SOMOS</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-gamepad"></i>
-                            Games
+                            JOGOS
                         </a>
                         <ul class="dropdown-menu">
 

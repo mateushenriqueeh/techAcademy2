@@ -1,4 +1,3 @@
-
 <br>
 <br>
 <div class="container1">
@@ -7,7 +6,7 @@
         <h1>Entre em Contato</h1>
         <br>
         
-        <form action="submit_contact.php" method="post">
+        <form method="post" action="envia.php" >
             <div class="form-group">
                 <label for="nome">Nome Completo</label>
                 <input type="text" id="nome" name="nome" required>
